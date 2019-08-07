@@ -1,7 +1,7 @@
 {
-  "name": "json-assist",
+  "name": "json-sql-db",
   "version": "1.0.0",
-  "description": "json filter, hasher, group by",
+  "description": "write sql quries on json objects",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -15,9 +15,6 @@
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
   },
-  "files": [
-    "lib/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/saikrishnaakula/json-assist.git"
@@ -41,5 +38,8 @@
     "tslint": "^5.18.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.5.3"
-  }
+  },
+  "files": [
+    "lib/**/*"
+  ]
 }
