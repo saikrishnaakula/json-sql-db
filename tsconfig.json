@@ -4,6 +4,7 @@
         "module": "commonjs",
         "declaration": true,
         "outDir": "./lib",
+        "lib": ["es2015", "es2016"],
         "strict": true
     },
     "include": [
@@ -11,7 +12,7 @@
     ],
     "exclude": [
         "node_modules",
-        "**/__tests__/*"
+        "src/__tests__/*"
     ]
     
 }

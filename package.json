@@ -5,13 +5,13 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "prepare": "npm run build",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags",
     "prepublishOnly": "npm test && npm run lint",
     "test": "jest --config jestconfig.json",
-    "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json"
   },
