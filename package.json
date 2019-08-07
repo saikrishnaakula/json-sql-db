@@ -1,0 +1,45 @@
+{
+  "name": "json-assist",
+  "version": "1.0.0",
+  "description": "json filter, hasher, group by",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags",
+    "prepublishOnly": "npm test && npm run lint",
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saikrishnaakula/json-assist.git"
+  },
+  "keywords": [
+    "json",
+    "groupby",
+    "filter"
+  ],
+  "author": "Sai Krishna Akula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saikrishnaakula/json-assist/issues"
+  },
+  "homepage": "https://github.com/saikrishnaakula/json-assist#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  }
+}
